@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>websocket测试</title>
+</head>
+
+<body>
+<div>
+    <div>
+        <div id="mypopover">
+            <h2>Help!</h2>
+        
+            <p>You can use the following commands to control the app</p>
+        
+            <ul>
+                <li>Press <ins>C</ins> to order cheese</li>
+                <li>Press <ins>T</ins> to order tofu</li>
+                <li>Press <ins>B</ins> to order bacon</li>
+                <hr />
+                <li>Say "Service" to summon the robot waiter to take your order</li>
+                <li>Say "Escape" to engage the ejector seat</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+<script type="text/javascript">
+    const popover = document.getElementById("mypopover");
+
+    document.addEventListener("keydown", (event) => {
+        console.log('event: ', event);
+        if (event.key === "h") {
+            // popover.hidePopover();
+            console.log(' popover.hidePopover: ',  popover.hidePopover);
+        }
+    });
+
+</script>
